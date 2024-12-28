@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的精美相册</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-images"></i> 我的精美相册</h1>
+        
+        <div class="album">
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="photo-container">
+                <img src="" alt="照片" id="current-photo" class="fade">
+                <div class="loading-text"><i class="fas fa-spinner fa-spin"></i> 加载中...</div>
+                <div class="photo-description"></div>
+            </div>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn play-btn"><i class="fas fa-play"></i> 播放</button>
+            <button class="control-btn pause-btn" style="display: none;"><i class="fas fa-pause"></i> 暂停</button>
+        </div>
+
+        <div class="thumbnail-container">
+            <!-- 缩略图将通过 JavaScript 动态添加 -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
